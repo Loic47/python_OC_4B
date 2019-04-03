@@ -1,0 +1,68 @@
+pi@raspberrypi:~ $ git clone noveau_projet/
+fatal: le chemin de destination 'noveau_projet' existe déjà et n'est pas un répertoire vide.
+pi@raspberrypi:~ $ 
+pi@raspberrypi:~ $ git clone noveau_projet/
+fatal: le chemin de destination 'noveau_projet' existe déjà et n'est pas un répertoire vide.
+pi@raspberrypi:~ $ ls
+Desktop    Downloads  oldconffiles  Public        Templates
+Documents  Music      Pictures      python_OC_4B  Videos
+pi@raspberrypi:~ $ cd python_OC_4B/
+pi@raspberrypi:~/python_OC_4B $ git status
+Sur la branche master
+
+Validation initiale
+
+Fichiers non suivis:
+  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
+
+	fougere.py
+	germanier_loic.py
+	hilbert.py
+	horloge.py
+	modulo.py
+	polygone.py
+	tore.py
+
+aucune modification ajoutée à la validation mais des fichiers non suivis sont présents (utilisez "git add" pour les suivre)
+pi@raspberrypi:~/python_OC_4B $ git add .
+pi@raspberrypi:~/python_OC_4B $ git status
+Sur la branche master
+
+Validation initiale
+
+Modifications qui seront validées :
+  (utilisez "git rm --cached <fichier>..." pour désindexer)
+
+	nouveau fichier : fougere.py
+	nouveau fichier : germanier_loic.py
+	nouveau fichier : hilbert.py
+	nouveau fichier : horloge.py
+	nouveau fichier : modulo.py
+	nouveau fichier : polygone.py
+	nouveau fichier : tore.py
+
+pi@raspberrypi:~/python_OC_4B $ git commit -m "First commit"
+[master (commit racine) 7c74556] First commit
+ 7 files changed, 444 insertions(+)
+ create mode 100644 fougere.py
+ create mode 100644 germanier_loic.py
+ create mode 100644 hilbert.py
+ create mode 100644 horloge.py
+ create mode 100644 modulo.py
+ create mode 100644 polygone.py
+ create mode 100644 tore.py
+pi@raspberrypi:~/python_OC_4B $ git status
+Sur la branche master
+Votre branche est basée sur 'origin/master', mais la branche amont a disparu.
+  (utilisez "git branch --unset-upstream" pour corriger)
+rien à valider, la copie de travail est propre
+pi@raspberrypi:~/python_OC_4B $ git push origin master 
+Username for 'https://github.com': Loic47
+Password for 'https://Loic47@github.com': 
+Décompte des objets: 9, fait.
+Delta compression using up to 4 threads.
+Compression des objets: 100% (8/8), fait.
+Écriture des objets: 100% (9/9), 3.34 KiB | 0 bytes/s, fait.
+Total 9 (delta 0), reused 0 (delta 0)
+To https://github.com/Loic47/python_OC_4B.git
+ * [new branch]      master -> master
